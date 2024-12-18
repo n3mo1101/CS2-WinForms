@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46BEFFF4-4662-4BD2-802A-803DE26B81F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GameCharacterWinForms</RootNamespace>
+    <AssemblyName>GameCharacterWinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ClickablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Models\GameCharacter.cs" />
+    <Compile Include="Models\Mage.cs" />
+    <Compile Include="Models\CustomProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Models\Warrior.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\bg_main.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sword %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\wizard-hat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\gym.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\health-care %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\health-care.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\magic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\magic-wand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\mana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\muscle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\shield %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\shield %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sword %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sword_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\swords.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\level-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\level-up %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\level-up %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\spartan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\viking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\wizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\bg_forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\SelecChar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Battleground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\warrior_txt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\mage_txt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\bg_scroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\bg_sword.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Audio\BGMusic_Form1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\BGMusic_Form2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Enemy_Bug\Ramses_Idle.gif" />
+    <Content Include="Assets\Enemy_Bug\Spr_Idle-ezgif.com-rotate.png" />
+    <Content Include="Assets\Enemy_Orc\Orc_Attack.gif" />
+    <Content Include="Assets\Enemy_Orc\Orc_Death.gif" />
+    <Content Include="Assets\Enemy_Orc\Orc_Idle.gif" />
+    <Content Include="Assets\Enemy_Orc\Orc_Portrait.jpg" />
+    <Content Include="Assets\Female_Mage\Mage_Portrait.png" />
+    <Content Include="Assets\Female_Mage\witch_attack.gif" />
+    <Content Include="Assets\Female_Mage\witch_charge.gif" />
+    <Content Include="Assets\Female_Mage\witch_float.gif" />
+    <Content Include="Assets\Female_Mage\witch_idle.gif" />
+    <Content Include="Assets\Female_Mage\witch_idle_faster.gif" />
+    <Content Include="Assets\Female_Mage\witch_take_damage.gif" />
+    <Content Include="Assets\Male_Warrior\Male_Portrait.png" />
+    <Content Include="Assets\Male_Warrior\Warrior_Attack.gif" />
+    <Content Include="Assets\Male_Warrior\Warrior_Hurt.gif" />
+    <Content Include="Assets\Male_Warrior\Warrior_Idle.gif" />
+    <Content Include="Assets\Male_Warrior\Warrior_Run.gif" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
