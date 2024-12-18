@@ -303,6 +303,16 @@ namespace GameCharacterWinForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Orc_Attack {
+            get {
+                object obj = ResourceManager.GetObject("Orc_Attack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Orc_Death {
             get {
                 object obj = ResourceManager.GetObject("Orc_Death", resourceCulture);

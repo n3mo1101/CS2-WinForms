@@ -69,6 +69,7 @@ namespace GameCharacterWinForms
             this.barEnemyHealth = new GameCharacterWinForms.Models.CustomProgressBar();
             this.barEnergy = new GameCharacterWinForms.Models.CustomProgressBar();
             this.barHealth = new GameCharacterWinForms.Models.CustomProgressBar();
+            this.EnemyAction = new System.Windows.Forms.PictureBox();
             this.gboxStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconStatus3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconStatus2)).BeginInit();
@@ -89,6 +90,7 @@ namespace GameCharacterWinForms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnemyIdle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnemyAction)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCharacterDetails
@@ -498,6 +500,18 @@ namespace GameCharacterWinForms
             this.barHealth.TabIndex = 34;
             this.barHealth.Value = 100;
             // 
+            // EnemyAction
+            // 
+            this.EnemyAction.BackColor = System.Drawing.Color.Transparent;
+            this.EnemyAction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.EnemyAction.Image = global::GameCharacterWinForms.Properties.Resources.Orc_Attack;
+            this.EnemyAction.Location = new System.Drawing.Point(354, 169);
+            this.EnemyAction.Name = "EnemyAction";
+            this.EnemyAction.Size = new System.Drawing.Size(166, 200);
+            this.EnemyAction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.EnemyAction.TabIndex = 60;
+            this.EnemyAction.TabStop = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -533,6 +547,7 @@ namespace GameCharacterWinForms
             this.Controls.Add(this.CharacterIdle);
             this.Controls.Add(this.CharacterAction);
             this.Controls.Add(this.EnemyIdle);
+            this.Controls.Add(this.EnemyAction);
             this.DoubleBuffered = true;
             this.Name = "Form3";
             this.Text = "Form3";
@@ -558,6 +573,7 @@ namespace GameCharacterWinForms
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EnemyIdle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EnemyAction)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,5 +616,6 @@ namespace GameCharacterWinForms
         private Label label2;
         private Models.CustomProgressBar customProgressBar1;
         private PictureBox EnemyIdle;
+        private PictureBox EnemyAction;
     }
 }

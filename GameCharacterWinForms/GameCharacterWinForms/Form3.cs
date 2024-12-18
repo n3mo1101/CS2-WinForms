@@ -53,6 +53,13 @@ namespace GameCharacterWinForms
 
         private void btnDefend_Click(object sender, EventArgs e)
         {
+            CharacterIdle.SendToBack();
+
+            EnemyIdle.Visible = false;
+            EnemyAction.Visible = true;
+            animationTimer.Start();
+            barHealth.Value -= 10;
+
             AddToBattleLog(selectedCharacter.Defend());
             txtCharacterDetails.Text = selectedCharacter.ToString();
         }
@@ -142,6 +149,8 @@ namespace GameCharacterWinForms
 
             CharacterIdle.Visible = true;
             CharacterAction.Visible = false;
+            EnemyIdle.Visible = true;
+            EnemyAction.Visible = false;
             animationTimer.Tick += animationTimer_Tick;
         }
 
@@ -150,6 +159,8 @@ namespace GameCharacterWinForms
             animationTimer.Stop();
             CharacterIdle.Visible = true;
             CharacterAction.Visible = false;
+            EnemyIdle.Visible = true;
+            EnemyAction.Visible = false;
         }
     }
 }
