@@ -219,10 +219,17 @@
     <Content Include="Assets\Audio\BGMusic_Form2.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Audio\retrograme-bgmusic.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\win-sfx.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Enemy_Bug\Ramses_Idle.gif" />
     <Content Include="Assets\Enemy_Bug\Spr_Idle-ezgif.com-rotate.png" />
     <Content Include="Assets\Enemy_Orc\Orc_Attack.gif" />
     <Content Include="Assets\Enemy_Orc\Orc_Death.gif" />
+    <Content Include="Assets\Enemy_Orc\Orc_Death_Fix.gif" />
     <Content Include="Assets\Enemy_Orc\Orc_Idle.gif" />
     <Content Include="Assets\Enemy_Orc\Orc_Portrait.jpg" />
     <Content Include="Assets\Female_Mage\Mage_Portrait.png" />
@@ -237,6 +244,7 @@
     <Content Include="Assets\Male_Warrior\Warrior_Hurt.gif" />
     <Content Include="Assets\Male_Warrior\Warrior_Idle.gif" />
     <Content Include="Assets\Male_Warrior\Warrior_Run.gif" />
+    <Content Include="Assets\youwin.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

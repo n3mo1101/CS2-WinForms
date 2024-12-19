@@ -14,9 +14,13 @@ namespace GameCharacterWinForms
 {
     public partial class Form1 : Form
     {
+        public static Form1 Instance;
+        public SoundPlayer soundPlayer;
+
         public Form1()
         {
             InitializeComponent();
+            Instance = this;
         }
 
         private void startgame_Click(object sender, EventArgs e)
@@ -33,14 +37,13 @@ namespace GameCharacterWinForms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
             this.pictureTitle.Parent = pictureBackground;
             this.startgame.Parent = pictureBackground;
             this.exit.Parent = pictureBackground;
 
             string audioFilePath = Path.Combine(Application.StartupPath, "Assets", "Audio", "BGMusic_Form2.wav");
-            SoundPlayer player = new SoundPlayer(audioFilePath);
-            player.PlayLooping();
+            soundPlayer = new SoundPlayer(audioFilePath);
+            soundPlayer.PlayLooping();
         }
 
         private void lblClickStart_Click(object sender, EventArgs e)

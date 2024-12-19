@@ -118,14 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\shield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Orc_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Enemy_Orc\Orc_Idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="viking" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\viking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\sword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="muscle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\muscle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -135,9 +135,6 @@
   </data>
   <data name="Orc_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Enemy_Orc\Orc_Death.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Orc_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Enemy_Orc\Orc_Idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BGMusic_Form1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BGMusic_Form1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -166,6 +163,9 @@
   <data name="bg_forest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\bg_forest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="people" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="warrior_txt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\warrior_txt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,8 +175,11 @@
   <data name="health-care" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\health-care.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="health-care (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\health-care (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Orc_Death_Fix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Enemy_Orc\Orc_Death_Fix.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Orc_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Enemy_Orc\Orc_Attack.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mage_Portrait" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Female_Mage\Mage_Portrait.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,14 +211,14 @@
   <data name="Battleground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Battleground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\shield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mage_txt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\mage_txt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="health" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\health.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Warrior_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Male_Warrior\Warrior_Attack.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mana" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\mana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,11 +241,14 @@
   <data name="wizard-hat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\wizard-hat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="magic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\magic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Warrior_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Male_Warrior\Warrior_Attack.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sword_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\sword_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\magic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg_sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\bg_sword.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,8 +262,8 @@
   <data name="swords" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\swords.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="muscle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\muscle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\sword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\gym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,10 +271,10 @@
   <data name="sword (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\sword (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="people" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\people.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="health-care (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\health-care (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Orc_Attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Enemy_Orc\Orc_Attack.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="youwin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\youwin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

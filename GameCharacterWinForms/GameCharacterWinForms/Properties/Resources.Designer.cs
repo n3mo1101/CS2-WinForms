@@ -323,6 +323,16 @@ namespace GameCharacterWinForms.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Orc_Death_Fix {
+            get {
+                object obj = ResourceManager.GetObject("Orc_Death_Fix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Orc_Idle {
             get {
                 object obj = ResourceManager.GetObject("Orc_Idle", resourceCulture);
@@ -566,6 +576,16 @@ namespace GameCharacterWinForms.Properties {
         internal static System.Drawing.Bitmap wizard_hat {
             get {
                 object obj = ResourceManager.GetObject("wizard-hat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap youwin {
+            get {
+                object obj = ResourceManager.GetObject("youwin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
