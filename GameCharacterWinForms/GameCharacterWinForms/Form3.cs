@@ -36,6 +36,14 @@ namespace GameCharacterWinForms
 
             txtCharacterDetails.Text = selectedCharacter.ToString();
 
+            CharacterIdle.Visible = true;
+            CharacterAction.Visible = false;
+            CharacterAction.Parent = EnemyIdle;
+
+            EnemyIdle.Visible = true;
+            EnemyAction.Visible = false;
+            EnemyAction.Parent = CharacterIdle;
+
             if (Form2.Instance.selectedClassType == "Mage")
             {
                 portraitPlayer.Image = Properties.Resources.Mage_Portrait;
@@ -49,14 +57,16 @@ namespace GameCharacterWinForms
                 iconStatus7.Image = Properties.Resources.magic_wand;
 
                 CharacterIdle.Image = Properties.Resources.witch_idle;
-                CharacterIdle.Size = new Size(140, 157);
+                CharacterIdle.Size = new Size(308, 157);
                 CharacterIdle.SizeMode = PictureBoxSizeMode.Zoom;
-                CharacterIdle.Location = new Point(217, 178);
+                CharacterIdle.Location = new Point(132, 172);
 
                 CharacterAction.Image = Properties.Resources.witch_attack;
                 CharacterAction.Size = new Size(303, 166);
                 CharacterAction.SizeMode = PictureBoxSizeMode.Zoom;
-                CharacterAction.Location = new Point(305, 169);
+
+                CharacterAction.Location = new Point(0, -10);
+                EnemyAction.Location = new Point(150, 0);
 
             }
             else if (Form2.Instance.selectedClassType == "Warrior")
@@ -72,21 +82,18 @@ namespace GameCharacterWinForms
                 iconStatus7.Image = Properties.Resources.shield__2_;
 
                 CharacterIdle.Image = Properties.Resources.Warrior_Idle;
-                CharacterIdle.Size = new Size(209, 212);
-                CharacterIdle.SizeMode = PictureBoxSizeMode.StretchImage;
-                CharacterIdle.Location = new Point(179, 157);
+                CharacterIdle.Size = new Size(503, 212);
+                CharacterIdle.SizeMode = PictureBoxSizeMode.Zoom;
+                CharacterIdle.Location = new Point(29, 146);
 
                 CharacterAction.Image = Properties.Resources.Warrior_Attack;
                 CharacterAction.Size = new Size(217, 212);
                 CharacterAction.SizeMode = PictureBoxSizeMode.StretchImage;
-                CharacterAction.Location = new Point(373, 156);
 
+                CharacterAction.Location = new Point(70, -30);
+                EnemyAction.Location = new Point(240, 20);
             }
-
-            CharacterIdle.Visible = true;
-            CharacterAction.Visible = false;
-            EnemyIdle.Visible = true;
-            EnemyAction.Visible = false;
+            
             animationTimer.Tick += animationTimer_Tick;
         }
 
